@@ -4,9 +4,32 @@
  place-items: center;
   position:absolute;
   background-color: rgb(12, 22, 33);
-  height: 60vh;
+  height: 70vh;
   width: 50vh;
   left:40%;
   top:20%;
   border-radius:8px;
 }
+.myinput
+{
+  display: flex;
+}
+.inputfield
+{
+  border:none;
+  background: rgb(12, 22, 33);
+  padding:15px;
+  color:whitesmoke;
+  width:18vw;
+  font-size: 20px;
+  
+}
+ .myinput span
+ {border:none;
+  background: rgb(12, 22, 33);
+  padding:15px;
+  color:whitesmoke;
+  width:18vw;
+  font-size: 36px;
+
+ }

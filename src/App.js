@@ -63,18 +63,20 @@ function App() {
   
   return (
     <div className="App">
-      <div className='input'>
-       <input type='text' onChange={Handleonchange} value={currVal}/> <span>{result}</span>
+      <div className='myinput'>
+       <input className='inputfield' type='text' onChange={Handleonchange} value={currVal}/> <span>{(result)}</span>
        
       
       </div>
       <div className='operators'>
+      <button onClick={Delfunc}>AC</button>
+
+     <button onClick={DelNum}>X</button>
      <button onClick={()=>Handleclick('/')} >/</button>
      <button onClick={()=>Handleclick('*')} >*</button>
      <button onClick={()=>Handleclick('-')} >-</button>
      <button onClick={()=>Handleclick('+')} >+</button>
-     <button onClick={Delfunc}>AC</button>
-     <button onClick={DelNum}>X</button>
+     
       </div>
       <div className='digits'>
         {Createdigit()}
