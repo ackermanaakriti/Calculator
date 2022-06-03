@@ -33,3 +33,12 @@
   font-size: 36px;
 
  }
+ .operators button
+ {
+   display:flex;
+  float:right;
+ }
+ .mydigits
+ {
+
+ }

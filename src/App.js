@@ -13,7 +13,7 @@ function App() {
     for(let i=0;i<10;i++)
     {
       
-      digit.push( <button onClick={()=>Handleclick(i)} value={i} key={i}>{i}</button>)
+      digit.push( <button  className='mydigits' onClick={()=>Handleclick(i)} value={i} key={i}>{i}</button>)
       
     }
     return digit;
