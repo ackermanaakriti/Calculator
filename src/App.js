@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css'; 
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 function App() {
   const [currVal, SetcurVal]= useState('')
@@ -23,6 +23,7 @@ function App() {
  
   const Handleclick=(value)=>
   {
+    SetcurVal(value);
     
     SetcurVal(currVal+value);
     
@@ -35,15 +36,36 @@ function App() {
  const Handleresult=( value)=>
  {
    setResult(eval(currVal+value).toString())
-   SetcurVal(...result, currVal);
 
+  
+   
+
+ }
+ 
+   useEffect(()=>
+   {
+    SetcurVal('');
+   },[]);
+  
+ const Delfunc=()=>
+ {
+  SetcurVal('');
+  setResult('');
+ }
+ const DelNum=()=>
+ {
+  
+  const myvalue= currVal.slice(0,-1);
+   SetcurVal(myvalue);
+   setResult('');
  }
   
   
   return (
     <div className="App">
       <div className='input'>
-       <input type='text' onChange={Handleonchange} value={currVal} />
+       <input type='text' onChange={Handleonchange} value={currVal}/> <span>{result}</span>
+       
       
       </div>
       <div className='operators'>
@@ -51,7 +73,8 @@ function App() {
      <button onClick={()=>Handleclick('*')} >*</button>
      <button onClick={()=>Handleclick('-')} >-</button>
      <button onClick={()=>Handleclick('+')} >+</button>
-     <button>DEL</button>
+     <button onClick={Delfunc}>AC</button>
+     <button onClick={DelNum}>X</button>
       </div>
       <div className='digits'>
         {Createdigit()}
