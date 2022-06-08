@@ -10,7 +10,7 @@ function App() {
   const Createdigit=()=>
   {
     const digit=[];
-    for(let i=0;i<10;i++)
+    for(let i=1;i<10;i++)
     {
       
       digit.push( <button  className='mydigits' onClick={()=>Handleclick(i)} value={i} key={i}>{i}</button>)
@@ -68,10 +68,12 @@ function App() {
        
       
       </div>
-      <div className='operators'>
+      <div className='operators-sign'>
       <button onClick={Delfunc}>AC</button>
 
-     <button onClick={DelNum}>X</button>
+     <button onClick={DelNum}>DEL</button>
+     </div>
+     <div className='operators'>
      <button onClick={()=>Handleclick('/')} >/</button>
      <button onClick={()=>Handleclick('*')} >*</button>
      <button onClick={()=>Handleclick('-')} >-</button>
@@ -80,7 +82,7 @@ function App() {
       </div>
       <div className='digits'>
         {Createdigit()}
-        
+        <button onClick={()=>Handleclick('0')} >0</button>
         <button onClick={()=>Handleclick('.')} >.</button>
         <button onClick={()=>Handleresult('')} >=</button>
       </div>

@@ -13,6 +13,7 @@
 .myinput
 {
   display: flex;
+  
 }
 .inputfield
 {
@@ -33,12 +34,68 @@
   font-size: 36px;
 
  }
- .operators button
+ .digits
  {
    display:flex;
-  float:right;
- }
- .mydigits
- {
+   flex-wrap:wrap
 
  }
+ .digits button{
+  flex:33.33%;
+color:whitesmoke;
+font-size: 25px;
+
+border-radius:40% ;
+align-items: center;
+border:none;
+background:rgb(52, 66, 81);
+  
+ }
+ .operators
+ {
+   display: flex;
+   flex-wrap:nowrap;
+ 
+ }
+ .operators button{
+flex:28.33%;
+width: 50px;
+color:whitesmoke;
+font-size: 28px;
+height: 50px;
+margin:2px;
+align-items: center;
+border-radius:40%;
+border:none;
+background:rgb(52, 66, 81);
+
+ }
+ .operators button:focus{
+   animation: shadow 1s ease-in-out;
+ }
+ @keyframes shadow{
+   0%
+   {
+    box-shadow: 2px 2px 2px rgb(190, 190, 210);
+   }
+ }
+ .operators-sign
+ {
+   display: flex;
+   margin:8px;
+   margin-top:20px;
+ }
+ .operators-sign button{
+  flex:33.33%;
+  color:whitesmoke;
+font-size: 28px;
+height: 50px;
+margin:2px;
+align-items: center;
+border-radius:10%;
+border:none;
+background:rgb(95, 111, 129);
+ }
+
+
+ 
