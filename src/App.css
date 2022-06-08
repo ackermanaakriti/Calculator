@@ -1,101 +1,132 @@
-.App
-{
+.App {
   text-align: center;
- place-items: center;
-  position:absolute;
+  place-items: center;
+  position: absolute;
   background-color: rgb(12, 22, 33);
   height: 70vh;
   width: 50vh;
-  left:40%;
-  top:20%;
-  border-radius:8px;
+  left: 40%;
+  top: 20%;
+  border-radius: 8px;
+  object-fit: cover;
 }
-.myinput
-{
+
+.myinput {
   display: flex;
-  
+  position: relative;
+  top: 15%;
 }
-.inputfield
-{
-  border:none;
-  background: rgb(12, 22, 33);
-  padding:15px;
-  color:whitesmoke;
-  width:18vw;
-  font-size: 20px;
-  
+
+.inputfield {
+  border: none;
+  background: rgb(22, 37, 53);
+  padding: 15px;
+  color: whitesmoke;
+  width: 18vw;
+  font-size: 38px;
+
 }
- .myinput span
- {border:none;
-  background: rgb(12, 22, 33);
-  padding:15px;
-  color:whitesmoke;
-  width:18vw;
-  font-size: 36px;
 
- }
- .digits
- {
-   display:flex;
-   flex-wrap:wrap
+.myinput span {
+  border: none;
+  background: rgb(22, 37, 53);
+  padding: 15px;
+  color: whitesmoke;
+  width: auto;
+  font-size: 29px;
+  text-align: end;
 
- }
- .digits button{
-  flex:33.33%;
-color:whitesmoke;
-font-size: 25px;
 
-border-radius:40% ;
-align-items: center;
-border:none;
-background:rgb(52, 66, 81);
-  
- }
- .operators
- {
-   display: flex;
-   flex-wrap:nowrap;
- 
- }
- .operators button{
-flex:28.33%;
-width: 50px;
-color:whitesmoke;
-font-size: 28px;
-height: 50px;
-margin:2px;
-align-items: center;
-border-radius:40%;
-border:none;
-background:rgb(52, 66, 81);
+}
 
- }
- .operators button:focus{
-   animation: shadow 1s ease-in-out;
- }
- @keyframes shadow{
-   0%
-   {
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+
+  position: relative;
+  top: 100px;
+  margin: 4px;
+
+}
+
+.digits button {
+  flex: 33.33%;
+  color: whitesmoke;
+  font-size: 25px;
+
+  border: 1px solid rgb(24, 33, 55);
+  align-items: center;
+
+  background: rgb(52, 66, 81);
+}
+
+.digits button:focus {
+  animation: shadow 1s ease-in-out;
+}
+
+@keyframes shadow {
+  0% {
     box-shadow: 2px 2px 2px rgb(190, 190, 210);
-   }
- }
- .operators-sign
- {
-   display: flex;
-   margin:8px;
-   margin-top:20px;
- }
- .operators-sign button{
-  flex:33.33%;
-  color:whitesmoke;
-font-size: 28px;
-height: 50px;
-margin:2px;
-align-items: center;
-border-radius:10%;
-border:none;
-background:rgb(95, 111, 129);
- }
+  }
+}
 
+.operators {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  top: 90px;
 
- 
+}
+
+.operators button {
+  flex: 28.33%;
+  width: 50px;
+  color: whitesmoke;
+  font-size: 28px;
+  height: 50px;
+  margin: 2px;
+  align-items: center;
+  border-radius: 40%;
+  border: none;
+  background: rgb(52, 66, 81);
+
+}
+
+.operators button:focus {
+  animation: shadow 1s ease-in-out;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 2px 2px 2px rgb(190, 190, 210);
+  }
+}
+
+.operators-sign {
+  display: flex;
+  margin: 8px;
+  position: relative;
+  top: 90px;
+}
+
+.operators-sign button {
+  flex: 33.33%;
+  color: whitesmoke;
+  font-size: 28px;
+  height: 50px;
+  margin: 2px;
+  align-items: center;
+  border-radius: 8%;
+  border: none;
+  background: rgb(51, 67, 84);
+}
+
+.operators-sign button:focus {
+  animation: shadow 1s ease-in-out;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 2px 3px 3px rgb(148, 148, 196);
+  }
+}
