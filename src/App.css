@@ -10,6 +10,14 @@
   border-radius: 8px;
   object-fit: cover;
 }
+h1{
+ 
+  position:absolute;
+  top:60px;
+  left:45%;
+
+  color:rgb(7, 7, 17)
+}
 
 .myinput {
   display: flex;
